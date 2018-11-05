@@ -8,12 +8,12 @@ Gradle build script which builds EV3 programs written in Kotlin, and deploys the
 
 ## Project setup:
 * Create project by checking out following project from GitHub
- * https://github.com/mstochmialek/ev3-kotlin.git
+  * https://github.com/mstochmialek/ev3-kotlin.git
 * Setup project using included gradle script
 
 ## Deployment setup:
 * Set settings to connect to EV3 brick (see build.gradle)
- * Password is required. It needs to be set.
+  * Password is required. It needs to be set.
 * Set main class name in build.gradle
 * Run (only once) gradle deployEv3Libs
 
