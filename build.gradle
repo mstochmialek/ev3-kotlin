@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url = "http://jcenter.bintray.com" }
+        jcenter()
     }
     dependencies {
         classpath 'org.hidetake:gradle-ssh-plugin:2.9.0'
@@ -14,7 +14,10 @@ plugins {
 apply plugin: 'org.hidetake.ssh'
 apply plugin: 'kotlin'
 
-def mainClass = 'hello.HelloKotlinKt'
+//def mainClass = 'example.HelloKotlinKt'
+//def mainClass = 'example.GraalGameKt'
+def mainClass = 'example.TicTacToeGameKt'
+
 def ev3LibDir = '/home/lejos/lib/'
 def ev3ProgramsDir = '/home/lejos/programs/'
 
@@ -41,9 +44,8 @@ compileTestKotlin {
 }
 
 repositories {
-    maven { url = "http://jcenter.bintray.com" }
+    jcenter()
     maven { url = "https://jitpack.io" }
-    mavenCentral()
 }
 
 dependencies {

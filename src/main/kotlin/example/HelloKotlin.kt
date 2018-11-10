@@ -1,4 +1,4 @@
-package hello
+package example
 
 import lejos.hardware.BrickFinder
 
